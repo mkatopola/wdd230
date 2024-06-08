@@ -1,0 +1,29 @@
+@media screen and (min-width: 800px) {
+  header h1 {
+    font-size: 40px;
+    font-family: "Roboto", serif;
+    text-align: right;
+    grid-column: 2/3;
+    /* margin-top: 100px; */
+    margin-right: 200px;
+    /* margin: auto; */
+    align-self: center;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  nav a {
+    flex: 1 1 100%;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  section {
+    margin: 1rem;
+  }
+}
