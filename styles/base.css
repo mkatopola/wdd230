@@ -18,7 +18,7 @@ footer {
     border: 1px solid #eb0d0d;
     padding: 1rem;
     background-color: rgb(226, 241, 234);
-    color: rgb(7, 120, 64);
+    color: rgb(2, 48, 25);
 }
 
 .head {
@@ -46,11 +46,11 @@ nav {
 nav a {
     display: block;
     color: rgb(2, 53, 27);
-    background: rgb(112, 186, 172);
+    background: rgb(197, 242, 234);
     text-decoration: none;
     font-size: 17px;
     text-align: center;
-    /* border-radius: 8px; */
+    padding: 8px;
 }
 
 nav a:hover {
@@ -77,12 +77,12 @@ main h1 {
 
 section {
     padding: 1rem;
-    background-color: rgb(226, 241, 234);
+    background-color: rgb(221, 240, 231);
     border-radius: 15px;
     border: 1px solid #eb0d0d;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.221);
     margin-bottom: 1rem;
-    color: rgb(7, 120, 64);
+    color: rgb(2, 49, 26);
 }
 
 section ul {
@@ -117,7 +117,7 @@ footer {
 #lastModified {
     font-style: normal;
     font-size: 12px;
-    color: #a70808;
+    color: #2d0505;
 }
 
 .flag-icon img {
