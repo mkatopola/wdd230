@@ -1,4 +1,5 @@
 body {
+  min-width: 510px;
   background: rgba(6, 42, 224, 0.909);
   margin-left: 5px;
   margin-right: 5px;
