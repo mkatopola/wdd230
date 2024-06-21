@@ -1,4 +1,4 @@
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   header span {
     font-size: 40px;
     font-family: "Lucida Handwriting", cursive;
@@ -9,18 +9,37 @@
     align-self: center;
   }
 
-  nav {
+  main {
+    margin-top: 85px;
+  }
+
+  
+nav {
+  position: fixed;
+  margin-bottom: 16px;
+}
+
+  nav ul {
     display: flex;
   }
 
-  nav a {
+  nav ul li {
     flex: 1 1 100%;
-    border-radius: 8px;
   }
 
-  main {
+  nav ul li a {
+    margin: -10px;
+    border-radius: 10px;
+  }
+
+  hr {
+    grid-column: 1 / 3;
+    margin-bottom: 16px;
+  }
+
+  .sections {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
   }
 
   section {

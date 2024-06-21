@@ -8,3 +8,4 @@ document.addEventListener("DOMContentLoaded", function () {
     var lastModifiedParagraph = document.querySelector("#lastModified");
     lastModifiedParagraph.textContent = "Last Modification: " + lastModified;
 });
+
