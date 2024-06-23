@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blantyre Chamber of Commerce</title>
+    <meta name="description"
+        content="This is the week 2 Chamber of Commerce Assignment for Moffat Katopola in WDD 230 - Web Frontend Development">
+    <meta name="author" content="Moffat Katopola">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@700&family=Poppins&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta property="og:title"
+        content="This is the week 2 Chamber of Commerce Assignment for Moffat Katopola in WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://mkatopola.github.io/wdd230/images/blantyre.jpg">
+    <meta property="og:url" content="https://mkatopola.github.io/wdd230/index.html">
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <a href="chamber.html"><img class="icon" src="images/icon1.png" alt="icon"></a>
+            <h1>Blantyre Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <button class="hamburger" aria-label="Toggle navigation"></button>
+            <ul class="nav-menu">
+                <li><a href="chamber.html">Home</a></li>
+                <li><a href="#Discover">Discover</a></li>
+                <li><a href="#Directory">Directory</a></li>
+                <li><a href="#Join">Join</a></li>
+            </ul>
+        </nav>
+        <div class="mode">⚫</div>
+
+    </header>
+
+    <main>
+        <div class="hero-container">
+            <img class="hero-image" src="images/blantyre.jpg" alt="Picture of Blantyre City">
+            <a class="action" href="join-chamber.html">Join Chamber</a>
+        </div>
+
+        <div class="content">
+            <section class="sec1">
+                <h2>Events</h2>
+                <p>Join us for the Grand opening of our Annual Business Expo on August 7, 2024....</p>
+                <a href="#">Learn More...</a>
+            </section>
+
+            <section class="sec2">
+                <h2>Weather</h2>
+                <p>Temp: </p>
+                <p>Humidity: </p>
+                <p>Wind Chill: </p>
+            </section>
+        </div>
+
+        <div class="Membership">
+            <h2>Member Spotlights</h2>
+            <section class="card1">
+                <img src="images/majestic-furniture.webp" alt="Majestic Furniture">
+                <h3>Majestic Furniture</h3>
+                <p>Leading provider of modern furniture</p>
+                <p class="contacts">
+                    contact@mjfurniture.com <br>
+                    0999 123 456 <br>
+                    www.mjfurniture.com <br>
+                </p>
+            </section>
+
+            <section class="card2">
+                <img src="images/citizen-auto.webp" alt="Citizen Auto Shop">
+                <h3>Citizen Auto Shop</h3>
+                <p>Want spare parts for your vehicle? Find us!</p>
+                <p class="contacts">
+                    info@citizen.com <br>
+                    0888 123 456 <br>
+                    www.citizen.com <br>
+                </p>
+            </section>
+
+            <section class="card3">
+                <img src="images/kids-haven.webp" alt="Kids Haven">
+                <h3>Kids Haven</h3>
+                <p>Caring and educating the future generation</p>
+                <p class="contacts">
+                    mail@kidshaven.com <br>
+                    0999 456 789 <br>
+                    www.kidshaven.com <br>
+                </p>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="chamber-details">
+            <img src="images/icon1.png" alt="icon">
+            <p class="address">
+                Blantyre <br>
+                Chamber of Commerce <br>
+                M1 Nancholi <br>
+                Blantyre, Malawi <br>
+            </p>
+
+            <p class="contact">
+                0999 123 456 <br>
+                info@blantyreccmw.com <br>
+                Location on Map <br>
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="course-details">
+            <p>&copy; 2024 Blantyre Chamber </p>
+            <p><strong>Moffat Katopola </strong></p>
+            <p>WDD230 </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/navMenu.js"></script>
+    <script src="scripts/mode.js"></script>
+</body>
+
+</html>

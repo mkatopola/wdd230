@@ -1,0 +1,94 @@
+/* Laptop Styles */
+@media (min-width: 681px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  a.action {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background: rgb(120, 226, 120);
+    padding: 40px;
+  }
+
+  .content .sec1 {
+    grid-column: 1/2;
+  }
+
+  .content h2 {
+    text-align: left;
+  }
+
+  .Membership {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+  }
+
+  .Membership h2 {
+    background: rgb(13, 49, 78);
+    justify-content: center;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: -12px;
+    border: 15px;
+  }
+
+  .Membership section {
+    padding: 30px;
+  }
+
+  .Membership img {
+    display: block;
+    margin: auto;
+  }
+
+  h2 {
+    grid-column: 1/4;
+  }
+
+  .card1 {
+    grid-column: 1/2;
+  }
+
+  .card2 {
+    grid-column: 2/3;
+  }
+
+  .card3 {
+    grid-column: 3/4;
+  }
+
+  footer .chamber-details {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+  }
+
+  footer .chamber-details img {
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: end;
+  }
+
+  footer .course-details {
+    display: flex;
+    justify-content: space-between;
+  }
+}

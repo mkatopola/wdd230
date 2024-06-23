@@ -1,40 +1,34 @@
 @media screen and (min-width: 700px) {
   header span {
-    font-size: 40px;
+    font-size: 30px;
     font-family: "Lucida Handwriting", cursive;
     font-weight: bold;
     text-align: right;
     grid-column: 2/3;
-    margin-right: 200px;
     align-self: center;
   }
 
   main {
-    margin-top: 85px;
+    margin-top: 15px;
   }
-
-  
-nav {
-  position: fixed;
-  margin-bottom: 16px;
-}
 
   nav ul {
     display: flex;
-  }
-
-  nav ul li {
-    flex: 1 1 100%;
+    flex-direction: row;
+    justify-content: center;
   }
 
   nav ul li a {
-    margin: -10px;
     border-radius: 10px;
   }
 
   hr {
     grid-column: 1 / 3;
     margin-bottom: 16px;
+  }
+
+  .hamburger {
+    display: none;
   }
 
   .sections {
