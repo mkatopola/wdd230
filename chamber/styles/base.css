@@ -63,11 +63,10 @@ nav ul li:hover {
 }
 
 .mode {
-  margin: 15px;
   position: absolute;
   top: 0;
   right: 0;
-	font-size: 3rem;
+	font-size: 2rem;
 	cursor: pointer;
 }
 
@@ -88,18 +87,6 @@ main {
   width: 100%;
 }
 
-button {
-  margin: 20px;
-  padding: 10px;
-  font-size: 1em;
-  border-radius: 15px;
-}
-
-button a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-
 a.action {
   position: absolute;
   top: 40%;
@@ -107,11 +94,9 @@ a.action {
   padding: 10px 20px;
   background-color: rgb(8, 86, 169);
   color: rgb(255, 255, 255);
-  border: none;
   border-radius: 15px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1em;
 }
 
 .action:hover {
@@ -128,17 +113,14 @@ a.action {
   color: #201569;
 }
 
-.Membership h2 {
-  background: #022f5f ;
+.spotlights {
   text-align: center;
-  color:  #f4f4f4;
-  height: 50px;
-  margin-bottom: -20px;
+  background: rgb(13, 49, 78);
+  color: #fff;
+  justify-content: center;
 }
 
 .Membership section {
-  margin-top: 10px;
-  border: 10px;
   color: #000;
   background-color: rgb(99, 198, 203);
 }
