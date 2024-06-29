@@ -53,6 +53,10 @@ nav ul li {
   border-radius: 45px;
 }
 
+.active {
+  background: #06acb2;
+}
+
 nav ul li a {
   text-decoration: none;
   margin-left: 15px;
@@ -65,6 +69,38 @@ nav ul li a {
 nav ul li:hover {
   background: rgb(20, 111, 231);
   color: rgb(255, 255, 255);
+}
+
+.hero {
+	margin: 10px auto;
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+	height: 300px;
+}
+
+.hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.herolabel {
+	position: absolute;
+  margin-top: -200px;
+  margin-left: 50px;
+	background: radial-gradient(#fff, #68974d);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 10px;
+	box-shadow: 0 0 2rem #fff;
+	opacity: 0.75;
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.5rem;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 h1 {
@@ -105,6 +141,25 @@ section p {
 footer {
   text-align: center;
   color: rgb(7, 120, 64);
+}
+
+iframe {
+  width: 100%;
+}
+
+p {
+	margin: 1rem;
+}
+
+.label {
+	font-family: Arial, sans-serif;
+	font-weight: 700;
+}
+
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
 }
 
 #lastModified {
