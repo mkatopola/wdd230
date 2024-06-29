@@ -20,20 +20,20 @@
     <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="Moffat Katopola - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://mkatopola.github.io/wdd230/images/blantyre.jpg">
+    <meta property="og:image" content="https://mkatopola.github.io/wdd230/images/blantyre.webp">
     <meta property="og:url" content="https://mkatopola.github.io/wdd230/index.html">
 </head>
 
 <body>
     <header>
         <div class="head">
-            <img src="images/profile.jpg" width="90" alt="Moffat Katopola profile picture">
+            <img src="images/profile.webp" width="90" height="auto" alt="Moffat Katopola profile picture">
             <span>Moffat Katopola</span>
         </div>
         <nav>
             <button class="hamburger" aria-label="Toggle navigation"></button>
             <ul class="nav-menu">
-                <li><a class="active" href="index.html">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="chamber/index.html">Chamber</a></li>
                 <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
                 <li><a href="form.html">Form</a></li>
@@ -42,7 +42,14 @@
         <div class="mode">⚫</div>
 
     </header>
-
+    <picture class="hero">
+        <source srcset="images/hero-small.webp" media="(max-width: 600px)" width="400px" height="250px">
+        <source srcset="images/hero-large.webp" media="(max-width: 960px)">
+        <img src="images/hero.webp" alt="Durban SouthAfrica Temple">
+    </picture>
+    <div class="herolabel">
+        <p>Durban SouthAfrica Temple</p>
+    </div>
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
         <hr>
@@ -59,7 +66,10 @@
                         |
                         <a href="week02/bom.html">BOM Top 10</a>
                     </li>
-                    <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">LazyLoad</a> | <a href="week03/responsive-images.html">Responsive Images</a> | <a href="week03/bom.html">Web Storage API</a> </li>
+                    <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> | <a
+                            href="week03/lazyload.html">LazyLoad</a> | <a
+                            href="week03/responsive-images.html">Responsive Images</a> | <a href="week03/bom.html">Web
+                            Storage API</a> </li>
                     <li>Week 04: <a href="#">Content</a></li>
                     <li>Week 05: <a href="#">Content</a></li>
                     <li>Week 06: <a href="#">Content</a></li>
@@ -69,10 +79,16 @@
                 <h2>Information</h2>
                 <p class="location">Location</p>
                 <p class="weather">Weather</p>
-                <p class="page-visits">Page Visits</p>
+                <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
             </section>
         </div>
     </main>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5305.79491803535!2d35.008014609890154!3d-15.787556097412658!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2smw!4v1719684889693!5m2!1sen!2smw"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+        Blantyre CBD
+    </iframe>
     <footer>
         <p>&copy; 2024 Moffat Katopola</p>
         <p id="lastModified"></p>
