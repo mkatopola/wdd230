@@ -21,6 +21,34 @@
     display: none;
   }
 
+  .chamber {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .gallery {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .gallery img {
+    width: 100%;
+    margin: 5px auto;
+    transition: transform 0.1s ease;
+  }
+
+  .sidebar {
+    grid-column: 2/3;
+    background-color: #34597e;
+    margin-bottom: 2600px;
+    padding: 20px;
+    height: auto;
+    color: #fff;
+    border-radius: 25px;
+  }
+
   .content {
     display: grid;
     grid-template-columns: 2fr 1fr;

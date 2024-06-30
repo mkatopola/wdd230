@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover</title>
+    <meta name="description"
+        content="This is the week 2 Chamber of Commerce Assignment for Moffat Katopola in WDD 230 - Web Frontend Development">
+    <meta name="author" content="Moffat Katopola">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@700&family=Poppins&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta property="og:title"
+        content="This is the week 2 Chamber of Commerce Assignment for Moffat Katopola in WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://mkatopola.github.io/wdd230/images/blantyre.webp">
+    <meta property="og:url" content="https://mkatopola.github.io/wdd230/index.html">
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <a href="chamber.html"><img class="icon" src="images/icon1.png" alt="icon"></a>
+            <h1>Discover</h1>
+        </div>
+        <nav>
+            <button class="hamburger" aria-label="Toggle navigation"></button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="discover.html">Discover</a></li>
+                <li><a href="#Directory">Directory</a></li>
+                <li><a href="#Join">Join</a></li>
+            </ul>
+        </nav>
+        <div class="mode">⚫</div>
+    </header>
+
+    <main class="chamber">
+        <div class="sidebar">
+
+            <div id="visit-message"></div>
+            <div>
+                <h2>Demographics</h2>
+                <p>Blantyre is one of the major cities in Malawi with a diverse population.</p>
+    
+            </div>
+            <div>
+                <h2>Statistical Data</h2>
+                <ul>
+                    <li>Population: 1,068,681</li>
+                    <li>Area: 228 km²</li>
+                    <li>GDP: $3.2 billion</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li>Business Expo - July 20, 2024</li>
+                    <li>Annual Gala - August 15, 2024</li>
+                    <li>Tech Summit - September 10, 2024</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Attractions</h2>
+                <p>Blantyre offers several attractions including:</p>
+                <ul>
+                    <li>Blantyre Hotel</li>
+                    <li>Mount Mulanje</li>
+                    <li>Game Haven Hotel</li>
+                    <li>Blantyre Park</li>
+                    <li>Blantyre Kamuzu Dam</li>
+                    <li>Blantyre Michiru Hills</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <section class="gallery">
+            <figure>
+                <img src="images/game-haven.webp" width="600" height="500" alt="Game Haven" loading="lazy">
+                <figcaption>Game Haven Hotel Gardens</figcaption>
+            </figure>
+            <figure>
+                <img src="images/hotel.webp" width="600" height="500" alt="Blantyre Hotel" loading="lazy">
+                <figcaption>Blantyre Hotel Lounge Area</figcaption>
+            </figure>
+            <figure>
+                <img src="images/garden.webp" width="600" height="500" alt="Blantyre Garden" loading="lazy">
+                <figcaption>Blantyre Park Garden</figcaption>
+            </figure>
+            <figure>
+                <img src="images/kamuzu-dam.webp" width="600" height="500" alt="Blantyre Dam" loading="lazy">
+                <figcaption>Blantyre Kamuzu Dam</figcaption>
+            </figure>
+            <figure>
+                <img src="images/limbe.webp" width="600" height="500" alt="Blantyre Limbe" loading="lazy">
+                <figcaption>Blantyre Limbe Business Centre</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Michiru.webp" width="600" height="500" alt="Blantyre Michiru" loading="lazy">
+                <figcaption>Blantyre Michiru Hills</figcaption>
+            </figure>
+            <figure>
+                <img src="images/mulanje.webp" width="600" height="500" alt="Blantyre Mulanje" loading="lazy">
+                <figcaption>Blantyre Mulanje Mountain</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <div class="chamber-details">
+            <img src="images/icon1.png" alt="icon">
+            <p class="address">
+                Blantyre <br>
+                Chamber of Commerce <br>
+                M1 Nancholi <br>
+                Blantyre, Malawi <br>
+            </p>
+
+            <p class="contact">
+                0999 123 456 <br>
+                info@blantyreccmw.com <br>
+                Location on Map <br>
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="course-details">
+            <p>&copy; 2024 Blantyre Chamber </p>
+            <p><strong>Moffat Katopola </strong></p>
+            <p>WDD230 </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/navMenu.js"></script>
+    <script src="scripts/mode.js"></script>
+</body>
+
+</html>
+
+

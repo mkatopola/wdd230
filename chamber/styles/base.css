@@ -1,8 +1,7 @@
-/* General Styles */
 body {
   font-family: Arial, sans-serif;
   color: #333333;
-  background: #0056b3 ;
+  background: #0056b3;
   margin: 0;
   padding: 0;
 }
@@ -24,7 +23,6 @@ header img.icon {
   justify-content: center;
   align-items: center;
 }
-
 
 header h1 {
   font-size: 30px;
@@ -53,8 +51,16 @@ nav ul li a {
   text-decoration: none;
   margin: 15px;
   border: 5px;
-  color: #004a99;
+  color: #000;
   font-size: 1.2em;
+}
+
+nav ul .active {
+  background: #06acb2;
+}
+
+nav ul .active:hover {
+  background: #23d16e;
 }
 
 nav ul li:hover {
@@ -66,8 +72,8 @@ nav ul li:hover {
   position: absolute;
   top: 0;
   right: 0;
-	font-size: 2rem;
-	cursor: pointer;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 main {
@@ -132,6 +138,67 @@ a.action {
   border-radius: 200px;
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: #941616 solid;
+  border-radius: 25px;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+figure {
+  text-align: center; 
+  margin: 10px;
+}
+
+figure img {
+  display: block;
+  max-width: 100%;
+  height: auto; 
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+figcaption {
+  margin-top: 5px;
+  color: #fff;
+  background: #0056b3;
+  padding: 15px;
+  text-align: center;
+}
+
+.sidebar {
+  background-color: #34597e;
+  padding: 20px;
+  color: #fff;
+  border-radius: 25px;
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  margin: 1rem;
+  list-style:circle;
+}
+
+.sidebar div {
+  margin-bottom: 3rem;
+  padding: 15px;
+  border: #941616 solid;
+  border-radius: 25px;
+}
+
 footer {
   background-color: #333;
   color: #fff;
@@ -151,6 +218,14 @@ footer .details {
 
 /* Mobile Styles */
 @media (max-width: 680px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img:hover {
+    transform: none;
+  }
+
   header {
     flex-direction: column;
   }
@@ -191,17 +266,21 @@ footer .details {
   }
 
   .hamburger.active::before {
-    content: "\2715"; 
+    content: "\2715";
   }
 
   .content {
     background: rgb(120, 226, 120);
     padding: 40px;
-    border: #1a0aed;
+    border: #941616 5px solid;
   }
 
   .content h2 {
     text-align: left;
+  }
+
+  .Membership {
+    border: #941616 5px solid;
   }
 
   .Membership section {
