@@ -129,4 +129,31 @@
     display: flex;
     justify-content: space-between;
   }
+
+  
+  #form-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 15px;
+    padding: 0 15px;
+    border: 5px;
+    border-radius: 8px;
+  }
+
+  #form-area form {
+    grid-column: 2/3;
+    margin: 0 15px;
+    padding: 0 15px;
+    border: red solid;
+    border-radius: 8px;
+  }
+
+  #form-area aside {
+    grid-column: 1/2;
+    margin: 0 15px;
+    padding: 0 15px;
+    border: red solid;
+    border-radius: 8px;
+  }
+
 }
