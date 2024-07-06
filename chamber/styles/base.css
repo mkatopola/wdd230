@@ -294,6 +294,10 @@ footer .details {
   color: black;
 }
 
+.form-title {
+  text-align: center;
+}
+
 #form-area aside {
   margin:  25px;
   padding: 15px;
