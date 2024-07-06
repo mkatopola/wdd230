@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join - Moffat Katopola - WDD 230</title>
+    <meta name="description" content="Join page for the Chamber of Commerce  - Moffat Katopola - WDD 230 - Web Frontend Development.">
+    <meta name="author" content="Moffat Katopola">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@700&family=Poppins&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Join Page for the Chamber of Commerce - Moffat Katopola - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://mkatopola.github.io/wdd230/images/blantyre.webp">
+    <meta property="og:url" content="https://mkatopola.github.io/wdd230/chamber/join.html">
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <a href="chamber.html"><img class="icon" src="images/icon1.png" alt="icon"></a>
+            <h1>Join - Blantyre Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <button class="hamburger" aria-label="Toggle navigation"></button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#Directory">Directory</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        <div class="mode">⚫</div>
+
+    </header>
+
+    <main>
+        <h1 class="form-title">Join the Chamber</h1>
+        <hr>
+        <div id="form-area">
+            <div id="visit-message"></div>
+
+            <aside>
+                <h2>Membership Levels</h2>
+                <div>
+                    <h3><strong>NP Membership</strong></h3>
+                    <p>No fee, suitable for non-profit organizations.</p>
+                    <ul>
+                        <li>Access to community events</li>
+                        <li>Basic directory listing</li>
+                        <li>Networking opportunities</li>
+                        <li>Participation in volunteer activities</li>
+                        <li>Monthly community newsletter</li>
+                        <li>Invitations to special non-profit forums</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3><strong>Bronze Membership</strong></h3>
+                    <p>Entry-level membership with basic benefits.</p>
+                    <p>Fee: $100/year</p>
+                    <ul>
+                        <li>Access to all events and seminars</li>
+                        <li>Monthly newsletter</li>
+                        <li>Discounted event fees</li>
+                        <li>Basic advertising opportunities</li>
+                        <li>Access to member-only online content</li>
+                        <li>Eligibility for committee participation</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3><strong>Silver Membership</strong></h3>
+                    <p>Mid-level membership with additional benefits.</p>
+                    <p>Fee: $250/year</p>
+                    <ul>
+                        <li>Enhanced directory listing</li>
+                        <li>Free entry to networking events</li>
+                        <li>Access to online resources and webinars</li>
+                        <li>Special training sessions</li>
+                        <li>Priority event seating</li>
+                        <li>Opportunities for collaborative projects</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3><strong>Gold Membership</strong></h3>
+                    <p>Premium membership with maximum benefits.</p>
+                    <p>Fee: $500/year</p>
+                    <ul>
+                        <li>Priority support and consultation</li>
+                        <li>Exclusive sponsorship opportunities</li>
+                        <li>Complimentary tickets to major events</li>
+                        <li>Spotlight positions on the home page</li>
+                        <li>VIP access to special events</li>
+                        <li>Customizable advertising packages</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <form action="thankyou.html" method="get" class="wf2">
+                <fieldset>
+                    <div>
+                        <legend>Personal Information</legend>
+                        <label>First Name*: <input type="text" id="firstName" name="firstName" required></label>
+                        <label>Last Name*: <input type="text" id="lastName" name="lastName" required></label>
+                        <label>Mobile Phone*: <input type="tel" id="phone" name="phone" required></label>
+                        <label>Email*: <input type="email" id="email" name="email" placeholder="example@example.com"
+                                required></label>
+                    </div>
+
+                    <div>
+                        <legend>Organization</legend>
+                        <label>Organization Name*: <input type="text" id="organization" name="organization"
+                                required></label>
+                        <label>Title or Position*: <input type="text" id="title" name="title" pattern="[a-zA-Z-\s]{7,}"
+                                required></label>
+                        <label>Organization Description:<textarea id="description"
+                                name="description"></textarea></label>
+                    </div>
+
+                    <div>
+                        <legend>Membership</legend>
+                        <label>Membership Level*:
+                            <select id="membership" name="membership" required>
+                                <option value="">Please Select</option>
+                                <option value="np">NP Membership</option>
+                                <option value="bronze">Bronze Membership</option>
+                                <option value="silver">Silver Membership</option>
+                                <option value="gold">Gold Membership</option>
+                            </select>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+                <input type="submit" value="Join Chamber">
+            </form>            
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="chamber-details">
+            <img src="images/icon1.png" alt="icon">
+            <p class="address">
+                Blantyre <br>
+                Chamber of Commerce <br>
+                M1 Nancholi <br>
+                Blantyre, Malawi <br>
+            </p>
+
+            <p class="contact">
+                0999 123 456 <br>
+                info@blantyreccmw.com <br>
+                Location on Map <br>
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="course-details">
+            <p>&copy; 2024 Blantyre Chamber </p>
+            <p><strong>Moffat Katopola </strong></p>
+            <p>WDD230 </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getDates.js"defer></script>
+    <script src="scripts/navMenu.js"></script>
+    <script src="scripts/mode.js"></script>
+</body>
+
+</html>
