@@ -112,7 +112,7 @@ section {
   padding: 1rem;
   background-color: rgb(221, 240, 231);
   border-radius: 15px;
-  border: 1px solid #eb0d0d;
+  border: 2px solid #000000;
   margin: 1rem;
   color: rgb(2, 49, 26);
 }
@@ -154,6 +154,23 @@ p {
 .label {
 	font-family: Arial, sans-serif;
 	font-weight: 700;
+}
+
+.card {
+  background-color: rgb(203, 190, 190);
+  color: #000000;
+  text-align: center;
+}
+
+.card #description {
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+  margin-top: -.8rem;
+}
+
+.card #temperature {
+  font-size: 2rem;
+  margin: 3rem;
 }
 
 #visits {
