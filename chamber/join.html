@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join - Moffat Katopola - WDD 230</title>
-    <meta name="description" content="Join page for the Chamber of Commerce  - Moffat Katopola - WDD 230 - Web Frontend Development.">
+    <meta name="description" content="Join page for the Chamber of Commerce - Moffat Katopola - WDD 230 - Web Frontend Development.">
     <meta name="author" content="Moffat Katopola">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@700&family=Poppins&family=Roboto&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@700&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/larger.css" rel="stylesheet">
@@ -26,7 +24,7 @@
 <body>
     <header>
         <div class="head">
-            <a href="chamber.html"><img class="icon" src="images/icon1.png" alt="icon"></a>
+            <a href="chamber.html"><img class="icon" src="images/icon1.png" alt="Chamber of Commerce Icon"></a>
             <h1>Join - Blantyre Chamber of Commerce</h1>
         </div>
         <nav>
@@ -39,7 +37,6 @@
             </ul>
         </nav>
         <div class="mode">⚫</div>
-
     </header>
 
     <main>
@@ -105,49 +102,42 @@
 
             <form action="thankyou.html" method="get" class="wf2">
                 <fieldset>
-                    <div>
-                        <legend>Personal Information</legend>
-                        <label>First Name*: <input type="text" id="firstName" name="firstName" required></label>
-                        <label>Last Name*: <input type="text" id="lastName" name="lastName" required></label>
-                        <label>Mobile Phone*: <input type="tel" id="phone" name="phone" required></label>
-                        <label>Email*: <input type="email" id="email" name="email" placeholder="example@example.com"
-                                required></label>
-                    </div>
+                    <legend>Personal Information</legend>
+                    <label for="firstName">First Name*: <input type="text" id="firstName" name="firstName" required></label>
+                    <label for="lastName">Last Name*: <input type="text" id="lastName" name="lastName" required></label>
+                    <label for="phone">Mobile Phone*: <input type="tel" id="phone" name="phone" required></label>
+                    <label for="email">Email*: <input type="email" id="email" name="email" placeholder="example@example.com" required></label>
+                </fieldset>
 
-                    <div>
-                        <legend>Organization</legend>
-                        <label>Organization Name*: <input type="text" id="organization" name="organization"
-                                required></label>
-                        <label>Title or Position*: <input type="text" id="title" name="title" pattern="[a-zA-Z-\s]{7,}"
-                                required></label>
-                        <label>Organization Description:<textarea id="description"
-                                name="description"></textarea></label>
-                    </div>
+                <fieldset>
+                    <legend>Organization</legend>
+                    <label for="organization">Organization Name*: <input type="text" id="organization" name="organization" required></label>
+                    <label for="title">Title or Position*: <input type="text" id="title" name="title" pattern="[a-zA-Z\s-]{2,}" required></label>
+                    <label for="description">Organization Description:<textarea id="description" name="description"></textarea></label>
+                </fieldset>
 
-                    <div>
-                        <legend>Membership</legend>
-                        <label>Membership Level*:
-                            <select id="membership" name="membership" required>
-                                <option value="">Please Select</option>
-                                <option value="np">NP Membership</option>
-                                <option value="bronze">Bronze Membership</option>
-                                <option value="silver">Silver Membership</option>
-                                <option value="gold">Gold Membership</option>
-                            </select>
-                        </label>
-                    </div>
+                <fieldset>
+                    <legend>Membership</legend>
+                    <label for="membership">Membership Level*:
+                        <select id="membership" name="membership" required>
+                            <option value="">Please Select</option>
+                            <option value="np">NP Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
                 </fieldset>
 
                 <input type="hidden" id="timestamp" name="timestamp">
                 <input type="submit" value="Join Chamber">
-            </form>            
+            </form>
         </div>
-
     </main>
 
     <footer>
         <div class="chamber-details">
-            <img src="images/icon1.png" alt="icon">
+            <img src="images/icon1.png" alt="Chamber of Commerce Icon">
             <p class="address">
                 Blantyre <br>
                 Chamber of Commerce <br>
@@ -158,7 +148,7 @@
             <p class="contact">
                 0999 123 456 <br>
                 info@blantyreccmw.com <br>
-                Location on Map <br>
+                <a href="https://goo.gl/maps/xyz" target="_blank">Location on Map</a> <br>
             </p>
         </div>
 
@@ -171,9 +161,9 @@
             <p id="lastModified"></p>
         </div>
     </footer>
-    <script src="scripts/getDates.js"defer></script>
-    <script src="scripts/navMenu.js"></script>
-    <script src="scripts/mode.js"></script>
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/navMenu.js" defer></script>
+    <script src="scripts/mode.js" defer></script>
 </body>
 
 </html>
