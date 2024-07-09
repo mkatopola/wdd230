@@ -94,6 +94,10 @@ main {
   display: none;
 }
 
+.thankyou #visit-message {
+  display: none;
+}
+
 .hero-image {
   width: 100%;
 }
