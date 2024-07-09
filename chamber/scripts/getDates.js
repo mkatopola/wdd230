@@ -42,3 +42,9 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('Element with id "lastModified" not found.');
     }
 });
+
+function setTimestamp() {
+    var now = new Date();
+    var timestamp = now.toISOString();
+    document.getElementById('timestamp').value = timestamp;
+};
