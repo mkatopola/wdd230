@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var currentYear = new Date().getFullYear();
     var footerCopyright = document.querySelector("footer p:first-child");
     if (footerCopyright) {
-        footerCopyright.innerHTML = "&copy;" + currentYear + " Moffat Katopola | Malawi <span class='flag-icon'><img src='images/flag-icon.webp' alt='Malawi Flag'></span>";
+        footerCopyright.innerHTML = "&copy;" + currentYear + " Moffat Katopola | Malawi <span class='flag-icon'><img src='images/flag-icon.webp' alt='Malawi Flag' width='500' height='300'></span>";
     } else {
         console.error('Element "footer p:first-child" not found.');
     }
