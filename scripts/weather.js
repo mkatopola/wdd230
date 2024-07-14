@@ -14,18 +14,11 @@ const myUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=
 
 // WEATHER DATA
 async function apiFetch() {
-    try {
-        const response = await fetch(myUrl);
-        if (response.ok) {
-            const data = await response.json();
-            displayResults(data);
-            console.log(data);
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.log(error);
-    }
+    const response = await fetch(myUrl);
+    const data = await response.json();
+    displayResults(data);
+
+
 };
 
 function displayResults(weatherData) {
