@@ -20,18 +20,10 @@ const myUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon
 
 // WEATHER DATA
 async function apiFetch() {
-    try {
-        const response = await fetch(myUrl);
-        if (response.ok) {
-            const data = await response.json();
-            displayResults(data);
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.error('Error fetching weather data:', error);
-        myDescription.textContent = 'Unable to fetch weather data at the moment.';
-    }
+
+    const response = await fetch(myUrl);
+    const data = await response.json();
+    displayResults(data);
 };
 
 function displayResults(weatherData) {
@@ -43,7 +35,7 @@ function displayResults(weatherData) {
     myGraphic.alt = currentWeather.weather[0].description;
 
     // Forecast for the next 3 days at noon (12:00:00)
-    const dailyWeather = weatherData.list.filter((reading) => reading.dt_txt.includes("12:00:00")).slice(1, 4);
+    const dailyWeather = weatherData.list.filter((reading) => reading.dt_txt.includes("00:00:00")).slice(1, 4);
 
     // Format the date
     const options = { weekday: 'long', month: 'long', day: 'numeric' };

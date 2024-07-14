@@ -128,23 +128,91 @@ a.action {
   color: #201569;
 }
 
-.spotlights {
+.content {
+  background: rgb(120, 226, 120);
+  padding: 0 20px;
+  margin: 0 15px;
+  border: #941616 5px solid;
+}
+
+.content h2 {
   text-align: center;
-  background: rgb(13, 49, 78);
-  color: #fff;
-  justify-content: center;
+  font-size: 2rem;
 }
 
-.Membership section {
-  color: #000;
-  background-color: rgb(99, 198, 203);
-}
-
-.Membership img {
-  width: 100%;
+.content img {
+  width: 40%;
   height: auto;
-  border: #146fe7;
-  border-radius: 200px;
+  border-radius: 25px;
+}
+
+.gold {
+  text-align: center;
+  border-radius: 6px;
+  margin-bottom: 100px;
+}
+
+.silver {
+  text-align: center;
+  border-radius: 6px;
+  margin-bottom: 35px;
+}
+
+hr {
+  border: 2px solid #941616;
+}
+
+.sec1 {
+  border: #941616 2px solid;
+  border-radius: 8px;
+}
+
+.sec2 {
+  border: #941616 2px solid;
+  border-radius: 8px;
+  text-align: center;
+}
+.weather-container {
+  text-align: center;
+  border-radius: 6px;
+  margin-bottom: 55px;
+}
+
+#forecast {
+  text-align: center;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.day {
+  text-align: center;
+  margin: 25px;
+  padding: 15px;
+}
+
+/* ..........BANNER........... */
+
+.banner {
+  background-color: #ffeb3b;
+  color: #000;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.banner button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
 
 .gallery {
@@ -160,14 +228,14 @@ a.action {
 }
 
 figure {
-  text-align: center; 
+  text-align: center;
   margin: 10px;
 }
 
 figure img {
   display: block;
   max-width: 100%;
-  height: auto; 
+  height: auto;
   border-radius: 15px;
   transition: transform 0.3s ease;
 }
@@ -199,7 +267,7 @@ figcaption {
 
 .sidebar ul li {
   margin: 1rem;
-  list-style:circle;
+  list-style: circle;
 }
 
 .sidebar div {
@@ -240,18 +308,17 @@ footer .details {
 /*----------- FORM STYLING --------------*/
 .wf2 fieldset {
   margin: 2rem 0;
-
 }
 
 .wf2 legend {
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
 }
 
 .wf2 label {
   display: block;
   padding-top: 1rem;
   color: #000000;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .wf2 div {
@@ -262,13 +329,12 @@ footer .details {
 .wf2 input[type="tel"],
 .wf2 input[type="email"],
 .wf2 textarea,
-.wf2 select
-{
+.wf2 select {
   background-color: #eee;
   display: block;
   border: solid 1px #999;
   border-radius: 6px;
-  padding: .75rem;
+  padding: 0.75rem;
   color: #555;
   width: 100%;
   max-width: 400px;
@@ -279,7 +345,7 @@ footer .details {
   background-image: linear-gradient(#9c2c13, #6f200e);
   color: #fff;
   border-radius: 6px;
-  padding: .8rem;
+  padding: 0.8rem;
   width: 100%;
   max-width: 400px;
   margin: -1rem 2% 2rem 2%;
@@ -306,7 +372,7 @@ footer .details {
 }
 
 #form-area aside {
-  margin:  25px;
+  margin: 25px;
   padding: 15px;
   border: red solid;
   border-radius: 8px;
@@ -341,15 +407,10 @@ aside div {
   display: none;
 }
 
-/* article {
-  border: #6f200e 3px solid;
-  border-radius: 8px;
-} */
-
 #dynamic {
   border: 5px darkred solid;
   border-radius: 8px;
-  }
+}
 
 .menu {
   text-align: center;
@@ -394,10 +455,10 @@ article.grid section {
 }
 
 article.grid section img {
-  width: 100%;  
+  width: 100%;
   height: auto;
   border-radius: 30px;
-  }
+}
 
 article.list section {
   margin-bottom: 20px;
@@ -408,17 +469,16 @@ article.list section {
 }
 
 article.list section img {
-width: 8%;  
-height: auto;
-border-radius: 50px;
-
+  width: 8%;
+  height: auto;
+  border-radius: 50px;
 }
 
 article.list section div {
   display: flex;
   flex-grow: 1;
   padding: 10px;
-justify-content: space-around;
+  justify-content: space-around;
 }
 
 /* Mobile Styles */
@@ -474,49 +534,23 @@ justify-content: space-around;
     content: "\2715";
   }
 
-  .content {
-    background: rgb(120, 226, 120);
-    padding: 40px;
-    border: #941616 5px solid;
-  }
-
-  .content h2 {
-    text-align: left;
-  }
-
-  .Membership {
-    border: #941616 5px solid;
-  }
-
-  .Membership section {
-    display: block;
-    text-align: center;
-    border: 15px;
-    padding: 15px;
-  }
-
-  .Membership img {
-    width: 100px;
-    height: 100px;
-  }
-
   /* -----------Directory---------------- */
-  
+
   article.grid section {
     width: 100%;
     margin: 5px auto;
   }
-  
+
   article.grid section img {
-    width: 70%;  
+    width: 70%;
     height: auto;
     border-radius: 35px;
-    }
-  
+  }
+
   article.list section img {
     display: none;
   }
-  
+
   article.list section div {
     display: block;
   }

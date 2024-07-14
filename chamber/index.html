@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blantyre Chamber of Commerce</title>
-    <meta name="description" content="The Chamber of Commerce page  - Moffat Katopola - WDD 230 - Web Frontend Development">
+    <meta name="description"
+        content="The Chamber of Commerce page  - Moffat Katopola - WDD 230 - Web Frontend Development">
     <meta name="author" content="Moffat Katopola">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@700&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@700&family=Poppins&family=Roboto&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <meta property="og:title" content="The Chamber of Commerce page  - Moffat Katopola - WDD 230 - Web Frontend Development">
+    <meta property="og:title"
+        content="The Chamber of Commerce page  - Moffat Katopola - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://mkatopola.github.io/wdd230/images/blantyre.jpg">
     <meta property="og:url" content="https://mkatopola.github.io/wdd230/index.html">
 </head>
+
 <body>
     <header>
         <div class="head">
@@ -38,6 +44,10 @@
     </header>
 
     <main>
+        <div id="banner" class="banner hidden">
+            <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
+            <button id="close-banner" aria-label="Close banner">❌</button>
+        </div>
         <div class="hero-container">
             <div id="visit-message"></div>
             <img class="hero-image" src="images/blantyre.webp" alt="Picture of Blantyre City">
@@ -46,39 +56,41 @@
 
         <div class="content">
             <section class="sec1">
-                <h2>Events</h2>
-                <p>Join us for the Grand opening of our Annual Business Expo on August 7, 2024....</p>
-                <a href="#">Learn More...</a>
+                <div class="membership">
+                    <h2>Member Spotlights</h2>
+                    <hr>
+                    <div class="spotlights">
+                        <div class="gold"></div>
+                        <div class="silver"></div>
+                    </div>
+                </div>
             </section>
 
             <section class="sec2">
                 <h2>Weather</h2>
-                <img id="graphic" src="#" alt="#">
-                <p id="description"></p>
-                <p id="temperature"></p>
+                <hr>
+                <div class="weather-container">
+                    <h3>Weather Today</h3>
+                    <img id="graphic" src="#" alt="#">
+                    <p id="description"></p>
+                    <p id="temperature"></p>
+                </div>
                 <div id="forecast">
-                    <div class="day1">
-                        <h3 id="day1-date"></h3>
+                    <h3>Weather Forecast</h3>
+                    <div class="day">
+                        <h5 id="day1-date"></h5>
                         <p id="day1-temp"></p>
                     </div>
-                    <div class="day2">
-                        <h3 id="day2-date"></h3>
+                    <div class="day">
+                        <h5 id="day2-date"></h5>
                         <p id="day2-temp"></p>
                     </div>
-                    <div class="day3">
-                        <h3 id="day3-date"></h3>
+                    <div class="day">
+                        <h5 id="day3-date"></h5>
                         <p id="day3-temp"></p>
                     </div>
                 </div>
             </section>
-        </div>
-
-        <div class="Membership">
-            <h2>Member Spotlights</h2>
-            <div class="spotlights">
-                <div class="gold"></div>
-                <div class="silver"></div>
-            </div>
         </div>
 
     </main>
@@ -113,5 +125,7 @@
     <script src="scripts/mode.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/spotlights.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
+
 </html>

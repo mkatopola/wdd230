@@ -12,9 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
           membersData = data.members; // Store fetched data in membersData array
           displayMembers(); // Display members initially
       })
-      .catch(error => console.error('Error fetching members:', error));
 
-  // Function to display members based on current view (grid or list)
+      // Function to display members based on current view (grid or list)
   function displayMembers() {
       // Clear existing content
       display.innerHTML = '';
@@ -26,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
           const memberSection = document.createElement('section');
           if (isGrid) {
               memberSection.innerHTML = `
-                  <img src="images/${member.image}" alt="${member.name}" width="300" height="200" loading="lazy">
+                  <img src="${member.image}" alt="${member.name}" width="300" height="200" loading="lazy">
                   <h3>${member.name}</h3>
                   <p>${member.address}</p>
                   <p>${member.phone}</p>
@@ -36,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
               memberSection.classList.add('grid-item');
           } else {
               memberSection.innerHTML = `
-                  <img src="images/${member.image}" alt="${member.name}" width="300" height="200" loading="lazy">
+                  <img src="${member.image}" alt="${member.name}" width="300" height="200" loading="lazy">
                   <div>
                       <h3>${member.name}</h3>
                       <p>${member.address}</p>
