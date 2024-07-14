@@ -5,7 +5,7 @@
             "address": "123 Main St, Blantyre",
             "phone": "0999 123 456",
             "website": "www.mjfurniture.com",
-            "image": "majestic-furniture.webp",
+            "image": "images/majestic-furniture.webp",
             "membershipLevel": "Gold",
             "description": "Leading provider of modern furniture"
         },
@@ -14,7 +14,7 @@
             "address": "456 Elm St, Blantyre",
             "phone": "0888 123 456",
             "website": "www.citizen.com",
-            "image": "citizen-auto.webp",
+            "image": "images/citizen-auto.webp",
             "membershipLevel": "Silver",
             "description": "Want spare parts for your vehicle? Find us!"
         },
@@ -23,7 +23,7 @@
             "address": "789 Oak St, Blantyre",
             "phone": "0999 456 789",
             "website": "www.kidshaven.com",
-            "image": "kids-haven.webp",
+            "image": "images/kids-haven.webp",
             "membershipLevel": "Platinum",
             "description": "Caring and educating the future generation"
         },
@@ -32,7 +32,7 @@
             "address": "321 Pine St, Blantyre",
             "phone": "0999 654 321",
             "website": "www.bakeryblantyre.com",
-            "image": "blantyre-bakery.webp",
+            "image": "images/blantyre-bakery.webp",
             "membershipLevel": "Gold",
             "description": "Freshly baked goods daily"
         },
@@ -41,7 +41,7 @@
             "address": "654 Cedar St, Blantyre",
             "phone": "0888 654 321",
             "website": "www.blantyretech.com",
-            "image": "blantyre-tech.webp",
+            "image": "images/blantyre-tech.webp",
             "membershipLevel": "Silver",
             "description": "Innovative tech solutions"
         },
@@ -50,7 +50,7 @@
             "address": "987 Willow St, Blantyre",
             "phone": "0999 987 654",
             "website": "www.gardensupplies.com",
-            "image": "garden-supplies.webp",
+            "image": "images/garden-supplies.webp",
             "membershipLevel": "Bronze",
             "description": "All your gardening needs"
         },
@@ -59,7 +59,7 @@
             "address": "123 Spruce St, Blantyre",
             "phone": "0888 987 654",
             "website": "www.healthyliving.com",
-            "image": "healthy-living-pharmacy.webp",
+            "image": "images/healthy-living-pharmacy.webp",
             "membershipLevel": "Platinum",
             "description": "Your health, our priority"
         }
